@@ -1,3 +1,10 @@
+/***************************************************************************************
+* @file HWindController.cs                                                             *
+* @details  HardScene의 보스가 공격할 때 나오는 회오리의 속도와 충돌을 다루는 소스파일 *
+*                                                                                      *
+* ⓒ made by FellowFollow                                                              *
+****************************************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

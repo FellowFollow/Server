@@ -1,3 +1,10 @@
+/**********************************************************************
+* @file HHPBarScript.cs                                               *
+* @details  HardScene 플레이어의 체력과 관련된 함수를 다루는 소스파일 *
+*                                                                     *
+* ⓒ made by FellowFollow                                             *
+***********************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

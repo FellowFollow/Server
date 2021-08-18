@@ -1,3 +1,12 @@
+/**************************************************************************************
+
+* @file HWindGenerator.cs
+
+* @details  HardScene의 보스가 공격할 때 나오는 회오리가 나오는 빈도를 다루는 소스파일
+
+* ⓒ made by FellowFollow
+***************************************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,10 @@
+/******************************************************************
+* @file HenemyHPController.cs                                     *
+* @details  HardScene의 보스의 HP와 관련된 것을 다루는 소스파일   *
+*                                                                 *
+* ⓒ made by FellowFollow                                         *
+*******************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

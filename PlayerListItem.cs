@@ -1,3 +1,10 @@
+/*************************************************************
+* @file     PlayerListItem.cs                                *
+* @details  대기방에서 플레이어 리스트 업데이트 기능 구현       *
+*            입장하면 플레이어 추가, 퇴장하면 정보 제거        *
+*                                                            *
+* ⓒ made by FellowFollow                                    *                                           
+*************************************************************/
 using ExitGames.Client.Photon;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,6 +27,7 @@ public class PlayerListItem : MonoBehaviourPunCallbacks
         SetPlayerText(_player);
     }
    
+   //플레이어의 레디 여부 HastTable 타입으로 저장
    public override void OnPlayerPropertiesUpdate(Player target, ExitGames.Client.Photon.Hashtable changedProps)
    {
        base.OnPlayerPropertiesUpdate(target, changedProps);

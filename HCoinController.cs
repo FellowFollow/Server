@@ -1,3 +1,10 @@
+/******************************************************************
+* @file HCoinController.cs                                        *
+* @details  HardScene의 코인의 이동과 모은 코인을 다루는 소스파일 *
+*                                                                 *
+* ⓒ made by FellowFollow                                         *
+*******************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

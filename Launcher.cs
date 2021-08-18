@@ -1,3 +1,10 @@
+/*************************************************************************************
+* @file         Launcher.cs                                                          *
+* @details      로비 기능 구현                                                        *                                                      
+*               플레이어가 방을 선택&생성 하면 패널을 전환하여 방에 입장하도록 함        *
+*                                                                                    *
+* ⓒ made by FellowFollow                                                            *
+**************************************************************************************/
 using Photon.Pun;
 using Photon.Realtime;
 using System.Collections;
@@ -8,7 +15,7 @@ using UnityEngine.UI;
 public class Launcher : MonoBehaviourPunCallbacks
 {
     public static Launcher _instance;
-    //Lobby 패널
+    //로비 패널
     public GameObject Lobby;
     public InputField RoomNameInput;
 
@@ -18,22 +25,18 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     private List<RoomInfo> roomList;
 
-    //InRoom패널
+    //대기방 패널
     public GameObject InRoom;
     public Text roomTitle;
     public Transform playerlistContent;
     public GameObject Playerprefab;
 
-    ///<summary>
-    ///서버 연동 함수
-    ///<summary>
-
+    //서버 연동 함수
     public void Awake() 
     {
         if(_instance == null) _instance = this;
     }
 
-    //Start함수 없었음 Awake에 있었음
     public void Start()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
@@ -43,7 +46,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         Debug.Log("Connected to Master");
-         //callback called by Phton when we successfullyconnect to the master server
         PhotonNetwork.JoinLobby();
         base.OnConnectedToMaster();
     }
@@ -54,10 +56,8 @@ public class Launcher : MonoBehaviourPunCallbacks
         tabRooms.SetActive(true);
     }
 
-    ///<summary>
-    ///방 생성 후 입장 Create()
-    ///빠른 시작, 아무 방이나 들어가는 JoinRandom()
-    ///<summary>
+    //방 생성 후 입장 Create()
+    //빠른 시작, 아무 방이나 들어가는 JoinRandom()
     public void Create() {
         if(string.IsNullOrEmpty(RoomNameInput.text)) {
             return;
@@ -77,9 +77,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         InRoom.SetActive(true);
     }
 
-    ///<summary>
-    ///방 목록 
-    ///<summary>
+    //방 목록 
     public void ClearRoomList()
     {
         Transform content = tabRooms.transform.Find("Scroll View/Viewport/Content");
@@ -149,6 +147,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         Instantiate(Playerprefab, playerlistContent).GetComponent<PlayerListItem>().SetUp(newPlayer);
     }
 
+    //방에서 나감
     public void exit()
     {
         string exitinfo = "<color=#ff0000>" + "[System] The " + PhotonNetwork.LocalPlayer.NickName + " exit the room" + "</color>";

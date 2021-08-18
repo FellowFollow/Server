@@ -1,3 +1,11 @@
+/******************************************************************
+* @file         LoginManager.cs                                   *
+* @details      로그인과 회원가입 기능 구현                         *
+*               Photon서버와 Playfab DB 모두에 사용자 정보 저장     *
+*                                                                 *
+* ⓒ made by FellowFollow                                         * 
+******************************************************************/
+using System;                                                                
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +13,6 @@ using UnityEngine.UI;
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.SceneManagement;
-using System;
 using Photon.Pun;
 using Photon.Realtime;
 
@@ -45,9 +52,7 @@ public class LoginManager : MonoBehaviourPunCallbacks
         userName = UserName_Input.text.ToString();
     }
 
-    ///<summary>
-    ///로그인 기능
-    ///<summary>
+    ///로그인
     public void Login()
     {
         var request = new LoginWithEmailAddressRequest {
@@ -108,6 +113,7 @@ public class LoginManager : MonoBehaviourPunCallbacks
         Status.text = "비밀번호를 다시 입력해주세요";
     }
 
+    //비밀번호 찾기
     public void ResetPassword() {
         var request = new SendAccountRecoveryEmailRequest {
             Email = email,
@@ -121,10 +127,7 @@ public class LoginManager : MonoBehaviourPunCallbacks
         Status.text = "비밀번호 재설정을 위한 이메일이 발송되었습니다";
     }
 
-    ///<summary>
-    ///회원가입 기능
-    ///<summary>
-    
+    //회원가입
     public void Register()
     {
        var request = new RegisterPlayFabUserRequest {
@@ -148,9 +151,7 @@ public class LoginManager : MonoBehaviourPunCallbacks
         Status.text = "가입에 실패하였습니다. 다시 입력해주세요";
     }
 
-    ///<summary>
-    ///닉네임 등록
-    ///<summary>
+    //닉네임 등록
     public void Name()
     {
         var request = new UpdateUserTitleDisplayNameRequest
@@ -172,7 +173,6 @@ public class LoginManager : MonoBehaviourPunCallbacks
         NamePanel.SetActive(false);
         
         PhotonNetwork.NickName = result.DisplayName;
-     //   PhotonNetwork.LocalPlayer.NickName = result.DisplayName;
         Status.text = "Set name: " + name;
     }
 
@@ -182,7 +182,7 @@ public class LoginManager : MonoBehaviourPunCallbacks
             Debug.LogWarning(error.GenerateErrorReport());
     }
 
-
+    //로비로 씬 전환
     public void LobbyScene() {
         SceneManager.LoadScene("Lobby");
     }

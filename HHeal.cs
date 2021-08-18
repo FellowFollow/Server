@@ -1,3 +1,10 @@
+/***************************************************************
+* @file HHeal.cs                                               *
+* @details  HardScene의 치유 아이템의 사용을 다루는 소스파일   *
+*                                                              *
+* ⓒ made by FellowFollow                                      *
+****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

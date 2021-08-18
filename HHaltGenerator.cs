@@ -1,3 +1,10 @@
+/********************************************************************************
+* @file HHealGenerator.cs                                                       *
+* @details  HardScene의 보스 공격 무효화 아이템의 생성 빈도를 다루는 소스파일   *
+*                                                                               *
+* ⓒ made by FellowFollow                                                       *
+*********************************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
