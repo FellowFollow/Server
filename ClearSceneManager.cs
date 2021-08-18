@@ -44,10 +44,10 @@ public class ClearSceneManager : MonoBehaviour
         //리더보드 request 결과 처리부분
         PlayFabClientAPI.GetLeaderboard(request, (result) =>
         {
-            for (int i = 1; i <= PhotonNetwork.CurrentRoom.PlayerCount; i++)
+            for (int i = 0; i < PhotonNetwork.CurrentRoom.PlayerCount; i++)
             {
                 var curBoard = result.Leaderboard[i];
-                LeaderboardText.text += i + "위 : " + curBoard.Profile.Locations[0].CountryCode.Value + "  " + 
+                LeaderboardText.text += (i + 1) + "위 : " + curBoard.Profile.Locations[0].CountryCode.Value + "  " + 
                                                             curBoard.DisplayName + " : " + curBoard.StatValue + "\n";
 
             }
