@@ -1,3 +1,11 @@
+/*****************************************************************
+* @file         NHealGenerator.cs                                *
+* @details      Normal Mode                                      *
+*               일정 시간마다 체력 회복 아이템을 생성한다.       *
+*                                                                *
+* ⓒ made by FellowFollow                                        *
+*****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

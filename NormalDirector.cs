@@ -1,3 +1,12 @@
+/*****************************************************************
+* @file         NormalDirector.cs                                *
+* @details      노멀모드를 총괄하는 Game Director                *
+*               코인(점수)를 표시하며                            *
+*               hp증감, 점수 올리기 등 여러 함수를 포함 .        *
+*                                                                *
+* ⓒ made by FellowFollow                                        *
+*****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

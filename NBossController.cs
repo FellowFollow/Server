@@ -1,3 +1,13 @@
+/*****************************************************************
+* @file         NBossController.cs                               *
+* @details      노말 모드의 Bosscontroller
+*               맵의 보스가 플레이어의 공격을 감지하고,          *
+*               충돌할 경우 보스의 hp를 깎으며                   *
+*               알파값을 조절하여 충돌 이펙트를 설정한다.        *
+*                                                                *
+* ⓒ made by FellowFollow                                        *
+*****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

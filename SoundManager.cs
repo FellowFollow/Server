@@ -1,3 +1,12 @@
+/*****************************************************************
+* @file         SoundManager.cs                                  *
+* @details      맵에서 게임 효과음 및 bgm을 재생하는 역할        *
+*               public void형으로 선언한 SFXPlay함수를           *
+*               다른 스크립트에서 호출하는 방식으로 사용.        *
+*                                                                *
+* ⓒ made by FellowFollow                                        *
+*****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -39,13 +48,4 @@ public class SoundManager : MonoBehaviour
 
         Destroy(go, clip.length);
     }
-    /*
-    public void BGMplay(AudioClip clip)
-    {
-        bgSound.clip = clip;
-        bgSound.loop = true;
-        bgSound.volume = 0.1f;
-        bgSound.Play();
-    }
-    */
 }

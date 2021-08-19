@@ -1,3 +1,11 @@
+/**************************************************************************
+* @file         Inventory.cs                                              *
+* @details      플레이어 오브젝트에 붙여 인벤토리 역할을 하는 스크립트.   *
+*               슬롯 데이터를 생성 및 추가한다.                           *
+*                                                                         *
+* ⓒ made by FellowFollow                                                 *
+**************************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,10 @@
+/*****************************************************************
+* @file         coinGenerator.cs                                 *
+* @details      coin을 일정시간(span)마다 생성하는 스크립트.     *
+*                                                                *
+* ⓒ made by FellowFollow                                        *
+*****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -24,13 +24,13 @@ public class LoginManager : MonoBehaviourPunCallbacks
 
     public Text Status;
 
+    public GameObject lobbyBtn;
     public GameObject LoginPanel;
     public GameObject NamePanel;
 
     private string password;
     private string email;
     private string userName;
-
     
     void Start()
     {
@@ -96,6 +96,7 @@ public class LoginManager : MonoBehaviourPunCallbacks
             
             PlayerPrefs.SetString("Nickname", name);
             Status.text = name + "님 환영합니다!";
+            lobbyBtn.SetActive(true);
         }
 
     }
@@ -141,7 +142,7 @@ public class LoginManager : MonoBehaviourPunCallbacks
     private void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
         Debug.Log("가입 성공");
-        Status.text = "가입 성공";
+        Status.text = "가입에 성공하였습니다. 로그인 버튼을 눌러주세요!";
     }
 
     private void OnRegisterFailure(PlayFabError error)

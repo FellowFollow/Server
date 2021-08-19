@@ -1,3 +1,12 @@
+/*****************************************************************
+* @file         enemyHPcontroller.cs                             *
+* @details      보스(적)의 HP를 관리하는 스크립트.               *
+*               보스 HP의 상태를 표시하는 Slider의 값을 조절하고 *
+*               노멀모드 씬으로 전환 및 점수 저장을 한다.        *
+*                                                                *
+* ⓒ made by FellowFollow                                        *
+*****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,10 @@
+/*****************************************************************
+* @file         haltGenerator.cs                                 *
+* @details      일정 시간마다 공격 중지 아이템을 생성한다.       *
+*                                                                *
+* ⓒ made by FellowFollow                                        *
+*****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

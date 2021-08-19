@@ -1,9 +1,9 @@
 /**********************************************************************
-* @file HardDirector.cs                                               *
+* @file     HardDirector.cs                                           *
 * @details  HardScene의 HP 변동과 모은 코인, 씬 이동을 다룬 소스파일  *
 *                                                                     *
 * ⓒ made by FellowFollow                                             *
-***********************************************************************/
+**********************************************************************/
 
 using System.Collections;
 using System.Collections.Generic;

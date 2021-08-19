@@ -1,3 +1,11 @@
+/*****************************************************************
+* @file         Slot.cs                                          *
+* @details      각 슬롯의 순서키(1, 2, 3)를 파싱해               *
+*               해당 슬롯이 비어있는지 설정                      *
+*                                                                *
+* ⓒ made by FellowFollow                                        *
+*****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

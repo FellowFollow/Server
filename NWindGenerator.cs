@@ -1,3 +1,11 @@
+/*****************************************************************
+* @file         NWindGenerator.cs                                *
+* @details      Normal Mode                                      *
+*               일정 시간마다 효과음과 함께 장애물을 생성한다.   *
+*                                                                *
+* ⓒ made by FellowFollow                                        *
+*****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

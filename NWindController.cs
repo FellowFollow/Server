@@ -1,3 +1,13 @@
+/***************************************************************************
+* @file         NWindController.cs                                         *
+* @details      Normal Mode                                                *
+*               플레이어 공격 아이템이 일정 속도로 날아가게 하고           *
+*               맵 밖으로 나가거나 Player와 충돌하면 Destroy 시킴.         *
+*               UseDestroyItem() 함수: 맵 내에서 생성되는 장애물을 파괴    *
+*                                                                          *
+* ⓒ made by FellowFollow                                                  *
+***************************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

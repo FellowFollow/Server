@@ -1,3 +1,13 @@
+/*****************************************************************
+* @file         NCoinController.cs                               *
+* @details      노말 모드의 coinController
+*               coin이 일정 속도로 날아가게 하고                 *
+*               맵 밖으로 나가면 Destroy시킨다.                  *
+*               Player와 충돌하면 효과음과 함께 점수를 올린다.   *
+*                                                                *
+* ⓒ made by FellowFollow                                        *
+*****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

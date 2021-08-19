@@ -1,3 +1,10 @@
+/********************************************************************
+* @file         NReflectionGenerator.cs                             *
+* @details      노멀모드에서 일정 시간마다 공격 아이템을 생성한다.  *
+*                                                                   *
+* ⓒ made by FellowFollow                                           *
+********************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
